@@ -1,6 +1,7 @@
 <template>
   <div class="page home">
     <div class="container">
+      <Header :onLogin="login" />
       <h1>Home</h1>
       <p>
         This is a normal page, without any paywall, with premium &
@@ -11,8 +12,10 @@
 </template>
 
 <script>
+  import Header from './fragments/Header'
 
   export default {
+    components: { Header },
     methods: {
       sendHit() {
         window.poool('config', {
