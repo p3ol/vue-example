@@ -8,6 +8,7 @@
         free posts
       </p>
       <ul>
+        <li><router-link to="/premium">Premium post</router-link></li>
         <li><router-link to="/free">Free post</router-link></li>
       </ul>
     </div>
