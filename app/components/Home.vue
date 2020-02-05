@@ -7,6 +7,9 @@
         This is a normal page, without any paywall, with premium &
         free posts
       </p>
+      <ul>
+        <li><router-link to="/free">Free post</router-link></li>
+      </ul>
     </div>
   </div>
 </template>
