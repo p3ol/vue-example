@@ -9,6 +9,10 @@ module.exports = {
   resolve: {
     alias: {
       'vue$': 'vue/dist/vue.esm.js',
+      'asn1.js': require.resolve('asn1.js/'),
+      buffer: require.resolve('buffer/'),
+      crypto: require.resolve('crypto-browserify/'),
+      stream: require.resolve('stream-browserify/'),
     },
     extensions: ['*', '.js', '.vue', '.json'],
   },
@@ -39,13 +43,19 @@ module.exports = {
         minifyJS: true,
       },
     }),
+    new webpack.DefinePlugin({
+      'process.browser': JSON.stringify(process.browser),
+      'process.version': JSON.stringify(process.version),
+    }),
     new webpack.LoaderOptionsPlugin({
       debug: true,
     }),
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.[hash].js',
+    filename: 'bundle.[fullhash].js',
+    sourceMapFilename: 'bundle.[fullhash].js.map',
+    publicPath: '/',
   },
   devtool: 'inline-source-map',
   devServer: {
