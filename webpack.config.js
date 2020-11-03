@@ -62,6 +62,8 @@ module.exports = {
     contentBase: './dist',
     port: 8888,
     host: 'localhost',
+    open: true,
+    hot: true,
     historyApiFallback: true,
   },
 };

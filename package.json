@@ -49,6 +49,6 @@
     "vue-template-compiler": "2.6.11"
   },
   "scripts": {
-    "start": "node_modules/.bin/webpack serve --config ./webpack.config.js --hot --inline --open"
+    "start": "node_modules/.bin/webpack serve --config ./webpack.config.js --inline"
   }
 }
