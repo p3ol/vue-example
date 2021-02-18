@@ -7,12 +7,12 @@
   "author": "Nicolas Auger <nicolas@poool.fr>",
   "license": "MIT",
   "devDependencies": {
-    "@babel/core": "7.12.16",
+    "@babel/core": "7.12.17",
     "@babel/plugin-proposal-class-properties": "7.12.13",
     "@babel/plugin-proposal-object-rest-spread": "7.12.13",
-    "@babel/plugin-proposal-optional-chaining": "7.12.16",
-    "@babel/plugin-transform-runtime": "7.12.15",
-    "@babel/preset-env": "7.12.16",
+    "@babel/plugin-proposal-optional-chaining": "7.12.17",
+    "@babel/plugin-transform-runtime": "7.12.17",
+    "@babel/preset-env": "7.12.17",
     "@babel/preset-react": "7.12.13",
     "@vue/babel-preset-app": "4.5.11",
     "@vue/cli-plugin-babel": "4.5.11",
@@ -34,8 +34,8 @@
     "webpack-dev-server": "3.11.2"
   },
   "dependencies": {
-    "@babel/runtime": "7.12.13",
-    "@babel/runtime-corejs3": "7.12.13",
+    "@babel/runtime": "7.12.18",
+    "@babel/runtime-corejs3": "7.12.18",
     "asn1.js": "5.4.1",
     "bootstrap": "4.6.0",
     "buffer": "6.0.3",
